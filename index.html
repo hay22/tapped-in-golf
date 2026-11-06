@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tapped In Golf | Coming soon</title>
+<meta name="description" content="Ball markers and golf accessories for players who finish every putt. Launching soon.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%23e3bf62'/><circle cx='50' cy='50' r='26' fill='%230b1f15'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --deep: #0b1f15;
+    --chalk: #f4f7f2;
+    --brass: #e3bf62;
+    --mist: #c9d8ce;
+  }
+  * { box-sizing: border-box; margin: 0; }
+  html, body { height: 100%; }
+  body {
+    font-family: "Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
+    color: var(--chalk);
+    background: var(--deep);
+  }
+  .hero {
+    position: relative;
+    min-height: 100vh;
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: clamp(20px, 4vw, 44px) clamp(20px, 5vw, 64px);
+    background:
+      linear-gradient(to top, rgba(8,24,16,.94) 0%, rgba(8,24,16,.6) 38%, rgba(8,24,16,.08) 70%),
+      linear-gradient(to right, rgba(8,24,16,.55) 0%, rgba(8,24,16,0) 60%),
+      url("hero.jpg") 46% center / cover no-repeat,
+      var(--deep);
+  }
+  header { display: flex; align-items: center; gap: 12px; }
+  header svg { width: 36px; height: 36px; flex: none; }
+  .wordmark {
+    font-family: "Bricolage Grotesque", "Arial Black", system-ui, sans-serif;
+    font-weight: 800;
+    font-size: 1.15rem;
+    letter-spacing: .01em;
+  }
+  .copy { max-width: 860px; padding-bottom: clamp(8px, 3vw, 32px); }
+  .status {
+    display: inline-block;
+    padding: 7px 16px;
+    border: 1px solid rgba(244,247,242,.5);
+    border-radius: 999px;
+    font-size: .95rem;
+    font-weight: 600;
+    background: rgba(8,24,16,.35);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+  }
+  h1 {
+    margin-top: 22px;
+    font-family: "Bricolage Grotesque", "Arial Black", system-ui, sans-serif;
+    font-weight: 800;
+    font-size: clamp(3.2rem, 11vw, 8rem);
+    line-height: .9;
+    letter-spacing: -.035em;
+    animation: rise .9s cubic-bezier(.2,.7,.2,1) both;
+  }
+  .lede {
+    margin-top: 22px;
+    max-width: 30em;
+    font-size: clamp(1.05rem, 2.2vw, 1.3rem);
+    line-height: 1.5;
+    color: var(--mist);
+  }
+  footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px 24px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(244,247,242,.22);
+    font-size: .92rem;
+    color: var(--mist);
+  }
+  a { color: var(--chalk); text-underline-offset: 3px; }
+  a:focus-visible { outline: 3px solid var(--brass); outline-offset: 3px; }
+  @keyframes rise { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
+  @media (prefers-reduced-motion: reduce) { h1 { animation: none; } }
+</style>
+</head>
+<body>
+<div class="hero">
+  <header>
+    <svg viewBox="0 0 200 200" aria-hidden="true">
+      <circle cx="100" cy="100" r="96" fill="#e3bf62"/>
+      <circle cx="100" cy="100" r="80" fill="none" stroke="#0b1f15" stroke-width="3" stroke-dasharray="3 8"/>
+      <circle cx="100" cy="100" r="50" fill="#0b1f15"/>
+      <line x1="94" y1="72" x2="94" y2="126" stroke="#f4f7f2" stroke-width="4" stroke-linecap="round"/>
+      <path d="M94 72 L126 84 L94 96 Z" fill="#f0623c"/>
+    </svg>
+    <span class="wordmark">Tapped In Golf</span>
+  </header>
+
+  <main class="copy">
+    <span class="status">Coming soon</span>
+    <h1>Mark it.<br>Tap it in.</h1>
+    <p class="lede">Ball markers and golf accessories for players who finish every putt. Our first drop is on the way.</p>
+  </main>
+
+  <footer>
+    <span>© 2026 Tapped In Golf</span>
+    <a href="mailto:hello@yourdomain.com">hello@yourdomain.com</a>
+  </footer>
+</div>
+</body>
+</html>
